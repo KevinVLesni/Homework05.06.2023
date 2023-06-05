@@ -51,12 +51,11 @@ namespace Homework05._06._2023
                         bool authorIsFound = false;
                         Console.Write("Введите автора: ");
                         author = Console.ReadLine();
-                        for (int i = 0; i < books.GetLength(0); i++);
+                        for (int i = 0; i < books.GetLength(0); i++)
                         {
                             for (int j = 0; j  < books.GetLength(1); j ++)
                             {
-                                    int i = 0; //
-                                if(author == books[j, i])
+                                if(author.ToLower() == books[j, i].ToLower())
                                 {
                                     Console.Write($"Автор {books[j, i]} находится по адресу полка | столбец;  " +
                                         (i + 1), (j + 1));
